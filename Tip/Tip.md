@@ -58,3 +58,13 @@ d = [[0]*m for _ in range(n)]
 
 # global 변수
 - 함수 바깥에서 선언된 전역변수를 이용해야하기 때문.
+
+# 리스트 -> str
+```py
+arr = ['가', '나', '다', '라', "BlockDMask", '마']
+print(arr)
+
+# 그냥 하나의 문자열로 합쳐버리기
+str = ''.join(arr)
+print(str)
+``

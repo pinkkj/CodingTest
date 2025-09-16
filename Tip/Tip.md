@@ -109,3 +109,11 @@ days = [-(p-100)//s for p, s in zip(progresses, speeds)]  # 올림 계산
 ```py
 days = [-(p-100)//s for p, s in zip(progresses, speeds)]  
 ```
+
+# comparator
+- cmp_to_key → 파이썬에서 comparator를 정렬에 쓸 수 있게 변환해주는 도구.
+- 왜 -1, 1, 0 을 return?
+    - 비교 함수의 약속된 결과값입니다.
+    - 음수(보통 -1) → 첫 번째 인자가 두 번째 인자보다 "앞에 와야 한다".
+    - 양수(보통 1) → 첫 번째 인자가 두 번째 인자보다 "뒤에 와야 한다".
+    - 0 → 두 원소의 순서는 같다.

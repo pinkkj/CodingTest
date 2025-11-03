@@ -39,3 +39,9 @@ for test_case in range(1, T + 1):
         binary = f"{int(S[i],16):04b}"
         answer.append(binary)
     print(f"#{test_case} {''.join(answer)}")
+
+# 포맷 지정자 :04b 해부
+# b : 정수를 2진수로 출력.
+# 4 : 최소 너비 4칸을 보장.
+# 0 : 남는 자릿수는 0으로 채움(제로 패딩).
+# (: 는 f-string에서 “포맷 시작”을 뜻하는 표식)

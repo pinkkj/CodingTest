@@ -142,3 +142,22 @@ days = [-(p-100)//s for p, s in zip(progresses, speeds)]
 - 하위 문제(subproblem) 의 결과가 여러 번 중복 계산됨
 - “이전 단계 결과를 재활용”할 수 있음
 - 탐색 순서가 명확하거나 규칙적임
+
+# Counter
+```py
+from collections import Counter
+
+c = Counter('abcdeabcdabcaba')
+c.most_common(3)                # three most common elements
+# [('a', 5), ('b', 4), ('c', 3)]
+sorted(c)                       # list all unique elements
+# ['a', 'b', 'c', 'd', 'e']
+```
+
+# join
+```py
+a = ['1','2']
+b = ''.join(a)
+print(b)
+# 12
+```
